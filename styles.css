@@ -1,0 +1,162 @@
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #edcca0, #b8e123);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 20px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 36px;
+  color: #edcca0;
+  padding: 10px; 
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #edcca0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+nav a:first-child {
+  margin-left: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.destinos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.destino {
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+}
+
+.destino img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.destino img:hover {
+  transform: scale(1.1);
+}
+
+.destino h3 {
+  margin-top: 10px;
+  color: #333;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.destino p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+form {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+form label,
+form input,
+form textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+form input,
+form textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #555;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}

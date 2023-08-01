@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viagens ao Redor do Mundo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Varela+Round&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Viagens ao Redor do Mundo</h1>
+    <nav>
+      <a href="#destinos">Destinos Populares</a>
+      <a href="#contato">Entre em Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="destinos">
+      <h2>Destinos Populares</h2>
+      <div class="destinos">
+        <!-- Destino: Irlanda -->
+        <div class="destino">
+          <img src="/imagens/irlanda.jpg" alt="Irlanda">
+          <h3>Irlanda</h3>
+          <p>A Irlanda, conhecida como a "Ilha Esmeralda", é famosa por suas paisagens exuberantes, castelos históricos e cultura rica. Explore as deslumbrantes falésias de Moher, visite a animada cidade de Dublin e mergulhe na atmosfera acolhedora dos pubs irlandeses.</p>
+        </div>
+
+        <!-- Destino: Japão -->
+        <div class="destino">
+          <img src="/imagens/japao.jpg" alt="Japão">
+          <h3>Japão</h3>
+          <p>O Japão é uma mistura única de tradição e modernidade. Descubra a serenidade dos templos antigos, como o Templo Kiyomizu-dera em Kyoto, e a agitação das metrópoles modernas, como Tóquio. Delicie-se com a culinária japonesa, desde sushi a ramen, e participe de festivais culturais fascinantes.</p>
+        </div>
+
+        <!-- Destino: Canadá -->
+        <div class="destino">
+          <img src="/imagens/canada.jpg" alt="Canadá">
+          <h3>Canadá</h3>
+          <p>O Canadá oferece uma diversidade impressionante, desde a beleza das Montanhas Rochosas até as maravilhas naturais das Cataratas do Niágara. Explore cidades vibrantes como Vancouver e Montreal, desfrute da hospitalidade dos canadenses e desbrave a natureza intocada dos parques nacionais.</p>
+        </div>
+
+        <!-- Destino: França -->
+        <div class="destino">
+          <img src="/imagens/franca.jpg" alt="França">
+          <h3>França</h3>
+          <p>A França é famosa por sua cultura refinada, arquitetura icônica e culinária sofisticada. Visite a romântica cidade de Paris, deslumbre-se com os castelos do Vale do Loire e explore as belas paisagens da Provença.</p>
+        </div>
+
+        <!-- Destino: Austrália -->
+        <div class="destino">
+          <img src="/imagens/australia.jpg" alt="Austrália">
+          <h3>Austrália</h3>
+          <p>A Austrália oferece uma diversidade natural incrível, desde as praias paradisíacas até os desertos surpreendentes. Descubra a Grande Barreira de Corais, explore as cidades vibrantes de Sydney e Melbourne, e mergulhe na cultura aborígene rica e fascinante.</p>
+        </div>
+
+        <!-- Destino: Egito -->
+        <div class="destino">
+          <img src="/imagens/egito.jpg" alt="Egito">
+          <h3>Egito</h3>
+          <p>O Egito é um país cheio de história e mistérios. Explore as pirâmides icônicas de Gizé, navegue pelo rio Nilo, visite os templos de Luxor e Assuã, e maravilhe-se com a grandiosidade dos monumentos antigos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Viagens ao Redor do Mundo. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
