@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .app-header {
+    background-color: #007BFF;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .app-content {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none; /* Removemos o sublinhado padrão */
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li.concluida {
+    text-decoration: line-through;
+  }
+  
+  #botaoNovaLista {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rodape {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .rodape p {
+    margin: 0;
+  }
+  
