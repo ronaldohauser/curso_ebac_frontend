@@ -1,0 +1,1 @@
+function greet(o){console.log(`Olá Ronaldo!, ${o}!`)}greet("Olá!");

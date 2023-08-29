@@ -1,0 +1,29 @@
+$primary-color: #007bff;
+$secondary-color: #28a745;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;  // Fundo verde
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: $primary-color;  // Título azul
+  margin-top: 50px;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px;
+}
+
+button {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
