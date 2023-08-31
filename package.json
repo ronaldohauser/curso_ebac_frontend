@@ -1,0 +1,10 @@
+{
+  "name": "exercicio-grunt",
+  "version": "1.0.0",
+  "description": "",
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-less": "^2.1.0",
+    "grunt-contrib-uglify": "^5.0.1"
+  }
+}

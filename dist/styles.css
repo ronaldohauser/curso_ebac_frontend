@@ -1,0 +1,9 @@
+.exemplo {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.exemplo:hover {
+  background-color: #e74c3c;
+}
