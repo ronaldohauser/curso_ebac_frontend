@@ -1,3 +1,4 @@
+// Abstração
 class Pokemon {
   constructor(nome, tipo) {
     this.nome = nome;
@@ -30,6 +31,7 @@ class Pokemon {
   }
 }
 
+// Herança
 class Pikachu extends Pokemon {
   constructor(nome, eletrico) {
     super(nome, "Elétrico", eletrico);
@@ -48,6 +50,7 @@ class Pikachu extends Pokemon {
   }
 }
 
+// Herança
 class Bulbasaur extends Pokemon {
   constructor(nome, planta) {
     super(nome, "Planta/Veneno", planta);
@@ -78,6 +81,7 @@ class Bulbasaur extends Pokemon {
   }
 }
 
+// Herança
 class Charmander extends Pokemon {
   constructor(nome, fogo) {
     super(nome, "Fogo", fogo);
@@ -91,6 +95,7 @@ class Charmander extends Pokemon {
   }
 }
 
+// Herança
 class Squirtle extends Pokemon {
   constructor(nome, agua) {
     super(nome, "Água", agua);
@@ -118,7 +123,7 @@ class Squirtle extends Pokemon {
   }
 }
 
-// Instâncias de objetos
+// Instâncias
 const pikachu = new Pikachu("Pikachu", true);
 const bulbasaur = new Bulbasaur("Bulbasaur", true);
 const charmander = new Charmander("Charmander", true);
@@ -140,6 +145,7 @@ console.log(`Vida inicial de ${charmander.nome}: ${charmander.poderInicial}`);
 console.log(`Vida inicial de ${squirtle.nome}: ${squirtle.poderInicial}`);
 console.log();
 
+// Loop até que reste apenas um Pokémon com pontos de vida
 while (true) {
   pikachu.atacar(charmander);
   bulbasaur.usarAtaque(squirtle, "Chicote de Vinha");
