@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-23T16:37:44.189Z",
+    "end": "2024-02-23T16:37:59.620Z",
+    "duration": 15431,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c26bca38-5d4d-458b-8d3b-6e890a3a81c5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ebac-contatos\\testes.cy.js",
+      "file": "cypress\\e2e\\ebac-contatos\\testes.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+          "title": "Testes da Agenda de Contatos",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Teste de Sanidade",
+              "fullTitle": "Testes da Agenda de Contatos Teste de Sanidade",
+              "timedOut": null,
+              "duration": 2042,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('header > h1').should('have.length.greaterThan', 0);\ncy.get('form > input').should('have.length', 3);\ncy.screenshot('teste_sanity');",
+              "err": {},
+              "uuid": "f819fee3-59cc-4f1b-99fd-9ea0e71a25bd",
+              "parentUUID": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Adicionar Novo Contato",
+              "fullTitle": "Testes da Agenda de Contatos Adicionar Novo Contato",
+              "timedOut": null,
+              "duration": 3034,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "preencherFormulario('Ronaldo Dias', 'ronaldo.dias@teste.com.br', '11 991500000');\ncy.get('.adicionar').click();\ncy.screenshot('novo_contato_adicionado');",
+              "err": {},
+              "uuid": "376cc06c-cd8f-419b-96c5-e997b95cf715",
+              "parentUUID": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Habilitar Edição",
+              "fullTitle": "Testes da Agenda de Contatos Habilitar Edição",
+              "timedOut": null,
+              "duration": 1804,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "editarPrimeiroContato();\ncy.get('[type=\"text\"]').should('have.length.greaterThan', 0);\ncy.screenshot('edicao_habilitada');",
+              "err": {},
+              "uuid": "75c501da-ef74-44db-80b5-a0a0a82d74b5",
+              "parentUUID": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Alterar Primeiro Contato Relacionado",
+              "fullTitle": "Testes da Agenda de Contatos Alterar Primeiro Contato Relacionado",
+              "timedOut": null,
+              "duration": 4055,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "editarPrimeiroContato();\npreencherFormulario('Ronaldo Dias', 'ronaldo.dias@teste.com.br', '11 91500000');\ncy.get('.alterar').click();\ncy.screenshot('contato_alterado');",
+              "err": {},
+              "uuid": "0addaf69-53ac-4440-887e-84a644c2d63b",
+              "parentUUID": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deletar Contato",
+              "fullTitle": "Testes da Agenda de Contatos Deletar Contato",
+              "timedOut": null,
+              "duration": 1419,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.delete').last().click();\ncy.screenshot('contato_deletado');",
+              "err": {},
+              "uuid": "eeef98b9-f8e1-4d0d-aa41-8c8b31bfa160",
+              "parentUUID": "3cd202b7-d92b-42a4-9c62-1ca20f43ee47",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f819fee3-59cc-4f1b-99fd-9ea0e71a25bd",
+            "376cc06c-cd8f-419b-96c5-e997b95cf715",
+            "75c501da-ef74-44db-80b5-a0a0a82d74b5",
+            "0addaf69-53ac-4440-887e-84a644c2d63b",
+            "eeef98b9-f8e1-4d0d-aa41-8c8b31bfa160"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12354,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
